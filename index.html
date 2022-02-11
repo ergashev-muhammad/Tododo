@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200;1,700&family=Redressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Section Todo -->
+    
+    <section class="tododo">
+        <div class="container">
+            
+            <!-- Todo heading -->
+            
+            <h1 class="todo__heading">Todos</h1>
+            
+            <div class="todo__box">
+                
+                <!-- Todo form -->
+                
+                <form class="todo__form">
+                    
+                    <input class="todo__add-input" type="text" placeholder="New todo ..." required>
+                    
+                    <button class="todo__btn" type="submit">Add</button>
+                </form>
+                
+                <!-- Todo list -->
+                
+                <ul class="todos"></ul>
+                
+                <!-- Todo buttons -->
+                
+                <div class="buttons">
+                    <button class="button-all">All <strong class="button-all-text">2</strong></button>
+                    
+                    <button class="button-completed">Completed <strong class="button-completed-text">2</strong></button>
+                    
+                    <button class="button-uncompleted">Uncompleted <strong class="button-uncompleted-text">2</strong></button>
+                    
+                    <button class="button-clear">Clear</button>
+                    
+                    <button class="btn-modal">Open</button>
+                </div>
+                
+                <!-- Modal -->
+                
+                <modal class="modal">
+                    <div class="modal__inner">
+                        <h3 class="modal__heading">Assalomu aleykum!</h3>
+                        
+                        <button class="modal__close-btn">&times;</button>
+                    </div>
+                </modal>
+
+
+                
+                <!-- Todo template -->
+                
+                <template id="todo-template">
+                    <li class="todo">
+                        
+                        <input class="todo__check-input" type="checkbox" >
+                        
+                        <span class="todo__title">Smth</span>
+                        
+                        <button class="todo__delete-btn">&times;</button>
+                    </li>
+                </template>
+                
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
